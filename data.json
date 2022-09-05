@@ -1,0 +1,402 @@
+{
+  "customers": [
+    {
+      "id": 77,
+      "name": "أحمد - فكرى",
+      "nile": 0,
+      "towers": 0,
+      "center": 25,
+      "age": 33,
+      "gender": "male",
+      "phone": ""
+    },
+    {
+      "id": 26,
+      "name": "ابراهيم فتحي حلمي",
+      "nile": 0,
+      "towers": 0,
+      "center": 1,
+      "age": 34,
+      "gender": "male",
+      "phone": ""
+    },
+    {
+      "id": 62,
+      "name": " احمد محب محب السيد",
+      "nile": 0,
+      "towers": 0,
+      "center": 0,
+      "age": 33,
+      "gender": "male",
+      "phone": "01273692335"
+    },
+    {
+      "id": 48,
+      "name": " احمد حجازى محمد",
+      "nile": 0,
+      "towers": 1,
+      "center": 0,
+      "age": 40,
+      "gender": "male",
+      "phone": "01111111100"
+    },
+    {
+      "id": 74,
+      "name": "احمد الحسانين احمد يوسف",
+      "nile": 0,
+      "towers": 0,
+      "center": 0,
+      "age": 33,
+      "gender": "male",
+      "phone": "01207854451"
+    },
+    {
+      "id": 27,
+      "name": "احمد - حجازي",
+      "nile": 0,
+      "towers": 0,
+      "center": 1,
+      "age": 40,
+      "gender": "male",
+      "phone": ""
+    },
+    {
+      "id": 40,
+      "name": "ابراهيم محمد احمد جبر",
+      "nile": 0,
+      "towers": 0,
+      "center": 1,
+      "age": 54,
+      "gender": "male",
+      "phone": ""
+    },
+    {
+      "id": 59,
+      "name": "احمد كمال رزق محمد",
+      "nile": 0,
+      "towers": 0,
+      "center": 1,
+      "age": 33,
+      "gender": "male",
+      "phone": "0106864230"
+    },
+    {
+      "id": 19,
+      "name": "اسراء محمد فتحي",
+      "nile": 0,
+      "towers": 0,
+      "center": 2,
+      "age": 27,
+      "gender": "female",
+      "phone": ""
+    },
+    {
+      "id": 41,
+      "name": "احمد حمدي محمد الشابوري",
+      "nile": 0,
+      "towers": 0,
+      "center": 1,
+      "age": 31,
+      "gender": "male",
+      "phone": ""
+    },
+    {
+      "id": 43,
+      "name": " اسلام ربيع سيد احمد",
+      "nile": 0,
+      "towers": 0,
+      "center": 1,
+      "age": 38,
+      "gender": "male",
+      "phone": ""
+    },
+    {
+      "id": 17,
+      "name": "اشرف السيد حمزة",
+      "nile": 0,
+      "towers": 0,
+      "center": 1,
+      "age": 49,
+      "gender": "male",
+      "phone": ""
+    },
+    {
+      "id": 21,
+      "name": "الجوهري محمد الجوهري",
+      "nile": 0,
+      "towers": 0,
+      "center": 1,
+      "age": 12,
+      "gender": "male",
+      "phone": ""
+    },
+    {
+      "id": 7,
+      "name": "الشتيوي محمد عبد المعين",
+      "nile": 0,
+      "towers": 0,
+      "center": 1,
+      "age": 60,
+      "gender": "male",
+      "phone": "01018016738"
+    },
+    {
+      "id": 46,
+      "name": "احمد محمود رسلان",
+      "nile": 0,
+      "towers": 0,
+      "center": 1,
+      "age": 38,
+      "gender": "male",
+      "phone": ""
+    },
+    {
+      "id": 72,
+      "name": "اميرة محمود ابراهيم حسن",
+      "nile": 0,
+      "towers": 0,
+      "center": 0,
+      "age": 40,
+      "gender": "female",
+      "phone": "01004060990"
+    },
+    {
+      "id": 14,
+      "name": "انور عبدالرحمن محمد",
+      "nile": 0,
+      "towers": 0,
+      "center": 1,
+      "age": 43,
+      "gender": "male",
+      "phone": ""
+    },
+    {
+      "id": 25,
+      "name": "ايمان ممدوح حمزة",
+      "nile": 0,
+      "towers": 0,
+      "center": 1,
+      "age": 34,
+      "gender": "female",
+      "phone": ""
+    }
+  ],
+  "projects": [
+    {
+      "id": 1,
+      "name": "نايل تاورز",
+      "nameEn": "nile",
+      "section": "سكنى ادارى تجارى",
+      "types": [{ "id": 1, "name": "سكنى ادارى تجارى" }]
+    },
+    {
+      "id": 2,
+      "name": "أبراج المدينة",
+      "nameEn": "towers",
+      "section": "سكنى طبى تجارى",
+      "types": [
+        {
+          "id": 1,
+          "name": "سكنى طبى تجارى"
+        },
+        {
+          "id": 2,
+          "name": "سكني"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "مركز المدينة التجارى",
+      "nameEn": "center",
+      "section": "تجارى",
+      "types": [{ "id": 1, "name": "تجارى" }]
+    }
+  ],
+  "units": [
+    {
+      "id": 1,
+      "name": "نايل تاورز",
+      "desc": "nile",
+      "numOfUnits": 12,
+      "contract": 0,
+      "empty": 12,
+      "cost": 2000,
+      "sell": 15
+    },
+    {
+      "id": 2,
+      "name": "أبراج المدينة",
+      "desc": "towers",
+      "numOfUnits": 84,
+      "contract": 4,
+      "empty": 80
+    },
+    {
+      "id": 3,
+      "name": "مركز المدينة التجارى",
+      "desc": "تجاري",
+      "numOfUnits": 235,
+      "contract": 71,
+      "empty": 164
+    }
+  ],
+  "towers": [
+    {
+      "id": 1,
+      "name": "عمارة 1",
+      "type": "سكني",
+      "numOfUnits": 12,
+      "contract": 0,
+      "empty": 12,
+      "cost": 2000,
+      "sell": 15
+    },
+    {
+      "id": 2,
+      "name": "عمارة 2",
+      "type": "سكني",
+      "numOfUnits": 12,
+      "contract": 0,
+      "empty": 12,
+      "cost": 2000,
+      "sell": 15
+    },
+    {
+      "id": 3,
+      "name": "عمارة 3",
+      "type": "سكني",
+      "numOfUnits": 12,
+      "contract": 0,
+      "empty": 12,
+      "cost": 2000,
+      "sell": 15
+    },
+    {
+      "id": 4,
+      "name": "عمارة 4",
+      "type": "سكني",
+      "numOfUnits": 12,
+      "contract": 0,
+      "empty": 12,
+      "cost": 2000,
+      "sell": 15
+    },
+    {
+      "id": 5,
+      "name": "عمارة 5",
+      "type": "سكني",
+      "numOfUnits": 12,
+      "contract": 0,
+      "empty": 12,
+      "cost": 2000,
+      "sell": 15
+    },
+    {
+      "id": 6,
+      "name": "عمارة 6",
+      "type": "سكني",
+      "numOfUnits": 12,
+      "contract": 0,
+      "empty": 12,
+      "cost": 2000,
+      "sell": 15
+    },
+    {
+      "id": 7,
+      "name": "عمارة 7",
+      "type": "سكني",
+      "numOfUnits": 12,
+      "contract": 0,
+      "empty": 12,
+      "cost": 2000,
+      "sell": 15
+    }
+  ],
+  "constructions": [
+    {
+      "id": 1,
+      "name": "وحدة 1",
+      "cost": "420000.00",
+      "area": 100,
+      "type": "سكني"
+    },
+    {
+      "id": 2,
+      "name": "وحدة 2",
+      "cost": "420000.00",
+      "area": 100,
+      "type": "سكني"
+    },
+    {
+      "id": 3,
+      "name": "وحدة 3",
+      "cost": "420000.00",
+      "area": 100,
+      "type": "سكني"
+    },
+    {
+      "id": 4,
+      "name": "وحدة 4",
+      "cost": "420000.00",
+      "area": 100,
+      "type": "سكني"
+    },
+    {
+      "id": 5,
+      "name": "وحدة 1",
+      "cost": "420000.00",
+      "area": 100,
+      "type": "سكني"
+    },
+    {
+      "id": 6,
+      "name": "وحدة 2",
+      "cost": "420000.00",
+      "area": 100,
+      "type": "سكني"
+    },
+    {
+      "id": 7,
+      "name": "وحدة 3",
+      "cost": "420000.00",
+      "area": 100,
+      "type": "سكني"
+    },
+    {
+      "id": 8,
+      "name": "وحدة 4",
+      "cost": "420000.00",
+      "area": 100,
+      "type": "سكني"
+    },
+    {
+      "id": 9,
+      "name": "وحدة 1",
+      "cost": "420000.00",
+      "area": 100,
+      "type": "سكني"
+    },
+    {
+      "id": 10,
+      "name": "وحدة 2",
+      "cost": "420000.00",
+      "area": 100,
+      "type": "سكني"
+    },
+    {
+      "id": 11,
+      "name": "وحدة 3",
+      "cost": "420000.00",
+      "area": 100,
+      "type": "سكني"
+    },
+    {
+      "id": 12,
+      "name": "وحدة 4",
+      "cost": "420000.00",
+      "area": 100,
+      "type": "سكني"
+    }
+  ]
+}
