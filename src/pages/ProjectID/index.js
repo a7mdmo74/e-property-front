@@ -65,7 +65,7 @@ const Index = () => {
               إضافة وحدات
             </button>
           </div>
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 p-2">
+          <div className="grid grid-cols-2 lg:grid-cols-3 gap-3 p-2">
             {constructions.map((tower) => {
               const { id } = tower;
               return <Item key={id} tower={tower} />;

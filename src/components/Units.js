@@ -2,21 +2,21 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Img from "../assets/eskan-bg.png";
 const Units = ({ unit }) => {
-  const { id, name, numOfUnits, contract, empty, type } = unit;
+  const { id, name, numOfUnits, contract, empty } = unit;
   return (
     <div
       id={id}
-      className="w-[380px] bg-white rounded-lg border border-gray-200 shadow-3xl dark:bg-gray-800 dark:border-gray-700 mb-6"
+      className="w-[320px] bg-white rounded-lg border border-gray-200 shadow-2xl dark:bg-gray-800 dark:border-gray-700 mb-6"
     >
       <img className="rounded-t-lg" src={Img} alt={name} />
       <div className="p-5 text-center">
         <h5 className="mb-3 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
           {name}
         </h5>
-        <p className="mb-3 font-normal text-gray-700 dark:text-gray-400 flex flex-col justify-center gap-4">
-          <span>{numOfUnits} عدد الوحدات</span>
-          <span>{contract} وحدات تعاقد</span>
-          <span>{empty} وحدات فارغة</span>
+        <p className="mb-3 font-bold text-gray-700 dark:text-gray-400 flex flex-col justify-center gap-4">
+          <span className="font-semibold">{numOfUnits} عدد الوحدات</span>
+          <span className="font-semibold">{contract} وحدات تعاقد</span>
+          <span className="font-semibold">{empty} وحدات فارغة</span>
         </p>
         <Link to="/projects/main-project">
           <button
@@ -25,8 +25,8 @@ const Units = ({ unit }) => {
           >
             معرفة التفاصيل
             <svg
-              aria-hidden="true"
               className="ml-2 -mr-1 w-4 h-4"
+              aria-hidden="true"
               fill="currentColor"
               viewBox="0 0 20 20"
               xmlns="http://www.w3.org/2000/svg"

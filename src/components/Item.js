@@ -13,17 +13,18 @@ const Item = ({ tower }) => {
           {name}
         </h5>
         <div className="flex items-center justify-around my-4">
-          <p className="text-sm font-normal text-gray-700 dark:text-gray-400">
-            <span>المساحة: </span>
+          <p className="text-sm font-bold text-gray-700 dark:text-gray-400">
+            <span className="font-normal">المساحة: </span>
             {area}م
           </p>
-          <p className="text-sm font-normal text-gray-700 dark:text-gray-400">
-            <span>النوع: </span>
+          <p className="text-sm font-bold text-gray-700 dark:text-gray-400">
+            <span className="font-normal">النوع: </span>
             {type}
           </p>
         </div>
-        <p className="font-normal text-gray-700 dark:text-gray-400 text-md">
-          {cost} :سعر الوحدة
+        <p className="font-bold text-gray-700 dark:text-gray-400 text-md">
+          <span className="font-normal">سعر الوحدة : </span>
+          {cost}
         </p>
       </div>
     </Link>

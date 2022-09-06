@@ -45,69 +45,27 @@ function Dashboard() {
                 return <Units key={id} unit={unit} />;
               })}
             </div>
-            <div className="w-[85%]">
-              <div className="overflow-x-auto relative shadow-md sm:rounded-lg px-6">
+            <div className="w-full md:w-[80%]">
+              <div className="overflow-x-auto relative shadow-md sm:rounded-lg">
                 <table className="w-full text-sm text-left text-gray-700 dark:text-gray-400">
-                  <tbody>
-                    <tr className="border-b border-gray-200 dark:border-gray-700">
-                      <th
-                        scope="row"
-                        className="text-lg py-4 px-6 font-medium text-gray-900 whitespace-nowrap bg-gray-50 dark:text-white dark:bg-gray-800"
-                      >
-                        مدفوعات اليوم
-                      </th>
-                      <td className="py-4 px-6 text-lg font-bold text-black">
-                        0
-                      </td>
-                      <th
-                        scope="row"
-                        className="text-lg py-4 px-6 font-medium text-gray-900 whitespace-nowrap bg-gray-50 dark:text-white dark:bg-gray-800"
-                      >
+                  <thead className="text-sm md:text-md text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+                    <tr>
+                      <th scope="col" className="py-3 px-6">
                         تعاقدات اليوم
                       </th>
-                      <td className="py-4 px-6 text-lg font-bold text-black">
-                        0
-                      </td>
-                    </tr>
-                    <tr className="border-b border-gray-200 dark:border-gray-700">
-                      <th
-                        scope="row"
-                        className="text-lg py-4 px-6 font-medium text-gray-900 whitespace-nowrap bg-gray-50 dark:text-white dark:bg-gray-800"
-                      >
-                        مدفوعات الاسبوع
-                      </th>
-                      <td className="py-4 px-6 text-lg font-bold text-black">
-                        0
-                      </td>
-                      <th
-                        scope="row"
-                        className="text-lg py-4 px-6 font-medium text-gray-900 whitespace-nowrap bg-gray-50 dark:text-white dark:bg-gray-800"
-                      >
+                      <th scope="col" className="py-3 px-6">
                         تعاقدات الاسبوع
                       </th>
-                      <td className="py-4 px-6 text-lg font-bold text-black">
-                        0
-                      </td>
-                    </tr>
-                    <tr className="border-b border-gray-200 dark:border-gray-700">
-                      <th
-                        scope="row"
-                        className="text-lg py-4 px-6 font-medium text-gray-900 whitespace-nowrap bg-gray-50 dark:text-white dark:bg-gray-800"
-                      >
-                        مدفوعات الشهر
-                      </th>
-                      <td className="py-4 px-6 text-lg font-bold text-black">
-                        0
-                      </td>
-                      <th
-                        scope="row"
-                        className="text-lg py-4 px-6 font-medium text-gray-900 whitespace-nowrap bg-gray-50 dark:text-white dark:bg-gray-800"
-                      >
+                      <th scope="col" className="py-3 px-6">
                         تعاقدات الشهر
                       </th>
-                      <td className="py-4 px-6 text-lg font-bold text-black">
-                        0
-                      </td>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td className="py-4 px-6 font-bold">12</td>
+                      <td className="py-4 px-6 font-bold">25</td>
+                      <td className="py-4 px-6 font-bold">30</td>
                     </tr>
                   </tbody>
                 </table>
