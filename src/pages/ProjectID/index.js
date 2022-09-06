@@ -65,6 +65,12 @@ const Index = () => {
               إضافة وحدات
             </button>
           </div>
+          <div className="w-full bg-slate-200 dark:text-white dark:bg-gray-900 flex items-center justify-around p-4 mb-6">
+            <p>تكلفة العمارة</p>
+            <p>إجمال الوحدات</p>
+            <p>عدد الوحدات المباعة</p>
+            <p>عدد الوحدات المتبقية</p>
+          </div>
           <div className="grid grid-cols-2 lg:grid-cols-3 gap-3 p-2">
             {constructions.map((tower) => {
               const { id } = tower;

@@ -64,9 +64,6 @@ const Index = () => {
                       إسم المشروع
                     </th>
                     <th scope="col" className="py-3 px-6">
-                      النوع
-                    </th>
-                    <th scope="col" className="py-3 px-6">
                       عدد الوحدات
                     </th>
                     <th scope="col" className="py-3 px-6">

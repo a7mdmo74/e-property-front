@@ -26,7 +26,7 @@ const UnitID = () => {
               : "w-full min-h-screen pt-24 py-10"
           }
         >
-          <div className="w-full bg-slate-200 dark:text-white dark:bg-gray-900 flex items-center justify-between p-4 mb-6">
+          <div className="w-full bg-slate-200 dark:text-white dark:bg-gray-900 flex items-center justify-around p-4 mb-6">
             <button
               type="button"
               className="text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 font-medium rounded-lg text-sm px-5 py-2.5 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700"
@@ -34,23 +34,6 @@ const UnitID = () => {
               حجز
             </button>
             <p className="font-semibold">الوحدة {id}</p>
-            <p className="text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 font-medium rounded-lg text-sm px-5 py-2.5 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700">
-              الحالة: خالية
-            </p>
-          </div>
-          <div className="w-full mt-6 bg-slate-200 dark:text-white dark:bg-gray-900 flex items-center justify-around py-3 mb-6">
-            <button
-              type="button"
-              className="text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 font-medium rounded-lg text-sm px-5 py-2.5 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700"
-            >
-              تحديث البيانات
-            </button>
-            <button
-              type="button"
-              className="focus:outline-none text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:ring-red-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-900"
-            >
-              حذف
-            </button>
           </div>
           <div className="px-10">
             <div className="overflow-x-auto relative mt-8">
@@ -75,6 +58,9 @@ const UnitID = () => {
                     <th scope="col" className="py-3 px-6">
                       المشروع الرئيسي
                     </th>
+                    <th scope="col" className="py-3 px-6">
+                      الحالة
+                    </th>
                   </tr>
                 </thead>
                 <tbody>
@@ -90,6 +76,7 @@ const UnitID = () => {
                     <td className="py-4 px-6">عمارة 2</td>
                     <td className="py-4 px-6">سكني</td>
                     <td className="py-4 px-6">أبراج المدينة</td>
+                    <td className="py-4 px-6">خالية</td>
                   </tr>
                 </tbody>
               </table>
@@ -134,6 +121,20 @@ const UnitID = () => {
               className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
             >
               إضافة نظام للدفع
+            </button>
+          </div>
+          <div className="w-full mt-6 bg-slate-200 dark:text-white dark:bg-gray-900 flex items-center justify-around py-3 mb-6">
+            <button
+              type="button"
+              className="text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 font-medium rounded-lg text-sm px-5 py-2.5 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700"
+            >
+              تحديث البيانات
+            </button>
+            <button
+              type="button"
+              className="focus:outline-none text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:ring-red-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-900"
+            >
+              حذف
             </button>
           </div>
         </div>

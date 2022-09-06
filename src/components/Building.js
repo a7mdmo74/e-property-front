@@ -12,11 +12,14 @@ const Building = ({ tower }) => {
         scope="row"
         className="py-5 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white"
       >
-        <Link to={`/projects/project/${id}`}>{name}</Link>
+        <Link to={`/projects/project/${id}`}>
+          <>
+            <span>{name}</span>
+            <span className="text-[10px]">({type})</span>
+          </>
+        </Link>
       </th>
-      <td className="py-5 px-6">
-        <Link to={`/projects/project/${id}`}>{type}</Link>
-      </td>
+
       <td className="py-5 px-6">
         <Link to={`/projects/project/${id}`}>{numOfUnits}</Link>
       </td>
