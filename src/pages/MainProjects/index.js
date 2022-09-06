@@ -81,6 +81,7 @@ const Index = () => {
                     <th scope="col" className="py-3 px-6">
                       إجمالي المبيعات
                     </th>
+                    <th></th>
                   </tr>
                 </thead>
                 <tbody>
