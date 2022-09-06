@@ -2,7 +2,7 @@ import * as yup from "yup";
 
 const passwordRules = /^.{6,}$/;
 
-export const basicSchema = yup.object().shape({
+export const registerSchema = yup.object().shape({
   email: yup
     .string()
     .email("Please enter a valid email address")
@@ -19,7 +19,7 @@ export const basicSchema = yup.object().shape({
     .required("يجب ادخال كلمة المرور"),
   confirmPassword: yup
     .string()
-    .oneOf([yup.ref("passeord"), null], "كلمة المرور يجب ان تكون مطابقة")
+    .oneOf([yup.ref("password"), null], "كلمة المرور يجب ان تكون مطابقة")
     .required("يجب ملئ البيانات"),
 });
 // const passwordRules = /^(?=.*[a-z])(?=.*[A-Z]).{5,}$/;

@@ -2,7 +2,7 @@ import * as yup from "yup";
 
 const passwordRules = /^.{6,}$/;
 
-export const basicSchema = yup.object().shape({
+export const loginSchema = yup.object().shape({
   email: yup
     .string()
     .email("Please enter a valid email address")
