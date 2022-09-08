@@ -19,8 +19,8 @@ export default function Customers() {
 
   const fetchData = async () => {
     try {
-      const response = await axios.get(`http://localhost:5050/customers`);
-      setCustomers(response.data);
+      const response = await axios.get(`http://127.0.0.1:8000/api/customers`);
+      setCustomers(response.data.data);
     } catch (error) {
       console.warn(error.message);
     }

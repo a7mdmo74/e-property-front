@@ -18,11 +18,9 @@ export default function Register() {
       },
       validationSchema: registerSchema,
       onSubmit: (values, actions) => {
-        setTimeout(() => {
-          alert(JSON.stringify(values, null, 2));
-          actions.setSubmitting(false);
-          router("/", { replace: true });
-        }, 200);
+        alert(JSON.stringify(values, null, 2));
+        actions.setSubmitting(false);
+        router("/", { replace: true });
       },
     });
   return (
@@ -42,8 +40,8 @@ export default function Register() {
         </div>
         <form
           className="flex flex-col items-center gap-3 mt-6 w-full"
-          method="post"
           onSubmit={handleSubmit}
+          method="post"
         >
           <div className="grid grid-cols-1 md:grid-cols-2 w-full lg:w-[75%] gap-6">
             <span>

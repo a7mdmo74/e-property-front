@@ -1,12 +1,31 @@
+import axios from "axios";
 import { useState } from "react";
 
 function UserModal({ toggleModal }) {
   const [fName, setfName] = useState("");
   const [mName, setmName] = useState("");
   const [lName, setlName] = useState("");
+  const [age, setAge] = useState("");
   const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
+  const [national, setNational] = useState("");
   const [phone, setPhone] = useState("");
+  const [info, setInfo] = useState("");
+  const [gender, setGender] = useState("male");
+
+  const postData = (e) => {
+    e.preventDefault();
+    axios.post(`http://127.0.0.1:8000/api/customers`, {
+      name: fName,
+      mid_name: mName,
+      lName: lName,
+      email,
+      age,
+      gender,
+      phone,
+      national_id: national,
+    });
+  };
+
   return (
     <div
       id="defaultModal"
@@ -47,32 +66,42 @@ function UserModal({ toggleModal }) {
             <form
               className="flex flex-col items-center gap-3 mt-6 dark:text-black"
               method="post"
+              onSubmit={postData}
             >
+              CSRF()
               <div className="grid grid-cols-1 md:grid-cols-2 w-full gap-6">
                 <input
                   type="text"
-                  className="py-1 px-3 border-2 border-slate-200 rounded-lg w-full outline-none font-serif"
+                  className="py-2 px-3 border-2 border-slate-200 rounded-lg w-full outline-none font-serif"
                   placeholder="اسم المستخدم"
                   value={fName}
                   onChange={(e) => setfName(e.target.value)}
                 />
                 <input
                   type="text"
-                  className="py-1 px-3 border-2 border-slate-200 rounded-lg w-full outline-none font-serif"
+                  className="py-2 px-3 border-2 border-slate-200 rounded-lg w-full outline-none font-serif"
                   placeholder="الاسم الاوسط"
                   value={mName}
                   onChange={(e) => setmName(e.target.value)}
                 />
                 <input
                   type="text"
-                  className="py-1 px-3 border-2 border-slate-200 rounded-lg w-full outline-none font-serif"
+                  className="py-2 px-3 border-2 border-slate-200 rounded-lg w-full outline-none font-serif"
                   placeholder="اللقب"
                   value={lName}
                   onChange={(e) => setlName(e.target.value)}
                 />
                 <input
+                  type="number"
+                  className="py-2 px-3 border-2 border-slate-200 rounded-lg w-full outline-none font-serif"
+                  placeholder="العمر"
+                  min={22}
+                  value={age}
+                  onChange={(e) => setAge(e.target.value)}
+                />
+                <input
                   type="text"
-                  className="py-1 px-3 border-2 border-slate-200 rounded-lg w-full outline-none font-serif"
+                  className="py-2 px-3 border-2 border-slate-200 rounded-lg w-full outline-none font-serif"
                   placeholder="البريد الالكتروني"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
@@ -82,21 +111,63 @@ function UserModal({ toggleModal }) {
                   id="phone"
                   name="phone"
                   pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
-                  className="py-1 px-3 border-2 border-slate-200 rounded-lg w-full outline-none font-serif"
+                  className="py-2 px-3 border-2 border-slate-200 rounded-lg w-full outline-none font-serif"
                   placeholder="رقم الهاتف"
-                  value={password}
-                  onChange={(e) => setPassword(e.target.value)}
-                />
-                <input
-                  type="password"
-                  className="py-1 px-3 border-2 border-slate-200 rounded-lg w-full outline-none font-serif"
-                  placeholder="كلمة المرور"
                   value={phone}
                   onChange={(e) => setPhone(e.target.value)}
                 />
+                <input
+                  type="number"
+                  className="py-2 px-3 border-2 border-slate-200 rounded-lg w-full outline-none font-serif"
+                  placeholder="الرقم القومي"
+                  value={national}
+                  onChange={(e) => setNational(e.target.value)}
+                />
+                <input
+                  type="text"
+                  className="py-2 px-3 border-2 border-slate-200 rounded-lg w-full outline-none font-serif"
+                  placeholder="بيانات إضافية"
+                  value={info}
+                  onChange={(e) => setInfo(e.target.value)}
+                />
+              </div>
+              <div className="flex items-center gap-6 my-4">
+                <div className="flex items-center">
+                  <input
+                    checked={gender === "male"}
+                    id="default-radio-1"
+                    type="radio"
+                    value="male"
+                    name="default-radio"
+                    className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+                    onChange={() => setGender("male")}
+                  />
+                  <label
+                    htmlFor="default-radio-1"
+                    className="mr-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+                  >
+                    Male
+                  </label>
+                </div>
+                <div className="flex items-center">
+                  <input
+                    checked={gender === "female"}
+                    id="default-radio-2"
+                    type="radio"
+                    value="female"
+                    name="default-radio"
+                    className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+                    onChange={() => setGender("female")}
+                  />
+                  <label
+                    htmlFor="default-radio-2"
+                    className="mr-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+                  >
+                    Female
+                  </label>
+                </div>
               </div>
             </form>
-            
           </div>
           <div className="flex items-center p-6 space-x-2 rounded-b border-t border-gray-200 dark:border-gray-600">
             <button
@@ -111,6 +182,7 @@ function UserModal({ toggleModal }) {
               data-modal-toggle="defaultModal"
               type="button"
               className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+              onClick={postData}
             >
               إضافة
             </button>

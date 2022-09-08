@@ -1,6 +1,6 @@
 import { Link, useNavigate } from "react-router-dom";
 import { MdWavingHand } from "react-icons/md";
-import { replace, useFormik } from "formik";
+import { useFormik } from "formik";
 import { loginSchema } from "../../components/schemas/login";
 
 export default function Login() {
